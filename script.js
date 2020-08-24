@@ -2,15 +2,16 @@
 function number(){
     //let what = Math.floor(Math.random() * 10);
     let q = prompt('Угадай число от 1 до 100');
+    
     if (isNaN(q) || q.trim() === '' || q === null){
         alert('Введи число!');
         return number();
-    }
+    } 
     
     function terms(x){
          if (q>x){
             alert('Загаданное число меньше') ;
-            return number();}
+         return number();}
          if (q<x){
          alert('Загаданное число больше');
          return number();}
@@ -21,8 +22,16 @@ function number(){
         
     }
     terms(55);
+    console.dir(terms);
 }
-number();
+number(); 
+
+
+
+
+
+// let q = prompt('Угадай число от 1 до 100');
+// console.log(q)
 
 
 
