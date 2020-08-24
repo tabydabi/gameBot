@@ -3,6 +3,7 @@ function number(){
     //let what = Math.floor(Math.random() * 10);
     let q = prompt('Угадай число от 1 до 100');
     if (isNaN(q) || q.trim() === '' || q === null){
+        alert('Введи число!');
         return number();
     }
     
